@@ -1,0 +1,822 @@
+:root {
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --background-color: #ffffff;
+  --primary-text-color: #757575;
+  --button-color: #f5f4fa;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+  img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+}
+body {
+  color: var(--background-color);
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  /* top line bg */
+  color: var(--background-color);
+}
+
+.logo {
+  /* WebStudio */
+  line-height: 1.1;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--accent-color);
+  text-decoration: none;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.studio,
+.studio-current {
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.studio-current {
+  color: var(--title-text-color);
+}
+
+.studio:hover,
+.studio:focus {
+  color: var(--accent-color);
+}
+
+.studio-current:hover,
+.studio-current:focus {
+  color: var(--accent-color);
+}
+.portfolio,
+.portfolio-current {
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+.portfolio-current {
+  color: var(--accent-color);
+}
+.portfolio:hover,
+.portfolio:focus {
+  color: var(--accent-color);
+}
+.portfolio-current:hover,
+.portfolio-current:focus {
+  color: var(--accent-color);
+}
+
+.contacts {
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--title-text-color);
+  list-style-type: none;
+}
+.email,
+.telephone-number {
+  /* info@devstudio.com */
+  /* +38 096 111 11 11 */
+
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.email:hover,
+.email:focus {
+  color: var(--accent-color);
+}
+.telephone-number:hover,
+.telephone-number:focus {
+  color: var(--accent-color);
+}
+
+.hero {
+  font-family: Roboto;
+  background-color: #2f303a;
+  font-weight: 900;
+  padding-top: 600px;
+  padding-right: 1600px;
+  color:#ffffff
+}
+.button {
+  /* bg */
+
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  text-decoration: none;
+  /* Заказать услугу */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+
+  color: var(--background-color);
+  
+}
+/* .button:hover {
+  color: #2196F3;
+}
+.button:focus{
+  color: #2196F3;
+
+} */
+.details {
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+.details-text {
+  font-family: Roboto;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.punctuality {
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+.punctuality-text {
+  font-family: Roboto;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.planning {
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+.planning-text {
+  font-family: Roboto;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.technologies {
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #212121;
+}
+
+.technologies-text {
+  font-family: Roboto;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.what-we-do {
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.img-1 {
+  /* img */
+
+  background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+  mix-blend-mode: normal;
+}
+.img-2 {
+  /* img */
+
+  background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg);
+}
+.img-3 {
+  /* img */
+
+  background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
+}
+
+.our-team {
+  /* Section bg our team */
+
+  background: #f5f4fa;
+}
+.heading-team {
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.our-team {
+  /* Section bg */
+
+  background: #f5f4fa;
+}
+.img-igor {
+  /* card bg */
+
+  background: #ffffff;
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  /* card bg */
+}
+.igor-d {
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.product-designer {
+  /* Product Designer */
+
+  font-family: Roboto;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.img-olga {
+  /* card bg */
+
+  background: var(--background-color);
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.img-tarasov {
+  /* card bg */
+
+  background: var(--background-color);
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.img-michael {
+  /* card bg */
+
+  background: var(--background-color);
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.olga-r {
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.frontend-developer {
+  /* Frontend Developer */
+
+  font-family: Roboto;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.tarasov {
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.marketing {
+  /* Marketing */
+
+  font-family: Roboto;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.michael-e {
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.ui-designer {
+  /* UI Designer */
+
+  font-family: Roboto;
+
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+footer {
+  background: #2f303a;
+}
+
+.logo-footer {
+  /* WebStudio */
+
+  font-family: Raleway;
+
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--background-color);
+}
+.logo-footer span {
+  /* WebStudio */
+
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.address {
+  /* г. Киев, пр-т Леси Украинки, 26 */
+
+  font-family: Roboto;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  /* or 171% */
+  letter-spacing: 0.03em;
+
+  color: var(--background-color);
+  text-decoration: none;
+  font-style: normal;
+}
+.email-foot-number {
+  /* info@example.com */
+  /* +38 099 111 11 11 */
+
+  font-family: Roboto;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.all-button {
+  /* Все */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background-color: var(--button-color);
+}
+.all-button:hover,
+.all-button:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+.web-site {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+.web-site:hover,
+.web-site:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+.app-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+.app-button:hover,
+.app-button:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+.design-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+.design-button:hover,
+.design-button:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+.marketing-button {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+.marketing-button:hover,
+.marketing-button:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+.poster {
+  /* container bg */
+
+  background: var(--background-color);
+}
+.techno {
+  /* Технокряк */
+
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.web {
+  /* Веб-сайт */
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.poster {
+  /* Постер New Orlean vs Golden Star */
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.poster-design {
+  /* Дизайн */
+
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.restaurant {
+  /* Ресторан Seafood */
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+
+.app-restaurant {
+  /* Приложение */
+
+  font-family: Roboto;
+
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.prime {
+  /* Проект Prime */
+
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.prime-marketing {
+  /* Маркетинг */
+
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.boxes {
+  /* Проект Boxes */
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.box-app {
+  /* Приложение */
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.no-borders {
+  /* Inspiration has no Borders */
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.web-no-boarders {
+  /* Веб-сайт */
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.limited {
+  /* Издание Limited Edition */
+  font-family: Roboto;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.design-limited {
+  /* Дизайн */
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.lab {
+  /* Проект LAB */
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.lab-marketing {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+.business {
+  /* Growing Business */
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
+.app-business {
+  /* Приложение */
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+.container {
+  width: 1230px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
