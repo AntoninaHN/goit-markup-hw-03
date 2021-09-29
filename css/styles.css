@@ -5,8 +5,21 @@
   --primary-text-color: #757575;
   --button-color: #f5f4fa;
 }
-html {
-  box-sizing: border-box;
+
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  padding-right: 94px;
+  padding-bottom: 94px;
+}
+.section-advantages {
+  padding-top: 47px;
+  padding-bottom: 47px;
 }
 
 *,
@@ -20,19 +33,18 @@ h3,
 p {
   margin-top: 0;
 }
-  img {
+img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
-}
+
 body {
   color: var(--background-color);
 }
 ul {
   list-style: none;
   padding-left: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 a {
@@ -43,6 +55,13 @@ a {
 .header {
   /* top line bg */
   color: var(--background-color);
+  outline: 1px solid #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -52,9 +71,10 @@ a {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-
-  color: #000000;
-  text-decoration: none;
+  color: #212121;
+  padding-top: 24px;
+  margin-right: 93px;
+  padding-bottom: 25px;
 }
 
 .logo span {
@@ -62,6 +82,11 @@ a {
   text-decoration: none;
   line-height: 1.1;
   font-weight: 700;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
 }
 
 .studio,
@@ -74,6 +99,9 @@ a {
   letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
+  padding-top: 32px;
+  margin-right: 50px;
+  padding-bottom: 32px;
 }
 .studio-current {
   color: var(--title-text-color);
@@ -98,6 +126,9 @@ a {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  padding-top: 32px;
+  margin-right: 50px;
+  padding-bottom: 32px;
 }
 .portfolio-current {
   color: var(--accent-color);
@@ -122,10 +153,34 @@ a {
 
   color: var(--title-text-color);
   list-style-type: none;
+  padding-top: 32px;
+  margin-right: 50px;
+  padding-bottom: 32px;
 }
-.email,
-.telephone-number {
+.contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+.email {
   /* info@devstudio.com */
+  font-family: Roboto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.contact-email {
+  margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.telephone-number {
   /* +38 096 111 11 11 */
 
   font-family: Roboto;
@@ -137,6 +192,11 @@ a {
   text-decoration: none;
   color: var(--primary-text-color);
 }
+.contact-number {
+  margin: auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .email:hover,
 .email:focus {
   color: var(--accent-color);
@@ -147,12 +207,15 @@ a {
 }
 
 .hero {
-  font-family: Roboto;
   background-color: #2f303a;
+  font-family: Roboto;
   font-weight: 900;
-  padding-top: 600px;
-  padding-right: 1600px;
-  color:#ffffff
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 .button {
   /* bg */
@@ -171,15 +234,11 @@ a {
   line-height: 1.87;
 
   color: var(--background-color);
-  
 }
-/* .button:hover {
+/* .button:hover,.button:focus {
   color: #2196F3;
 }
-.button:focus{
-  color: #2196F3;
-
-} */
+ */
 .details {
   font-family: Roboto;
 
@@ -297,7 +356,7 @@ a {
   background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
 }
 
-.our-team {
+#our-team {
   /* Section bg our team */
 
   background: #f5f4fa;
@@ -514,6 +573,7 @@ footer {
   text-decoration: none;
 }
 
+/* ===========PORTFOLIO=========== */
 .all-button {
   /* Все */
 
@@ -813,10 +873,4 @@ footer {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
-}
-
-.container {
-  width: 1230px;
-  padding-right: 15px;
-  padding-left: 15px;
 }
