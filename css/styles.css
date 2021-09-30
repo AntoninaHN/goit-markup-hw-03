@@ -14,7 +14,6 @@
   margin-right: auto;
 }
 .section {
-  padding-right: 94px;
   padding-bottom: 94px;
 }
 .advantages-padding {
@@ -58,7 +57,7 @@ a {
 .header {
   /* top line bg */
   color: var(--background-color);
-  outline: 1px solid #ffffff;
+  border-bottom: 1px solid #ececec;
   margin-left: auto;
   margin-right: auto;
 }
@@ -75,6 +74,8 @@ a {
   font-size: 26px;
   letter-spacing: 0.03em;
   color: #212121;
+}
+.logo {
   padding-top: 24px;
   margin-right: 93px;
   padding-bottom: 25px;
@@ -95,7 +96,6 @@ a {
 .studio,
 .studio-current {
   font-family: Roboto;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -209,6 +209,10 @@ a {
   color: var(--accent-color);
 }
 /* ===============HERO=============== */
+.hero-container {
+  display: flex;
+  align-items: center;
+}
 .hero-text {
   font-family: Roboto;
   font-weight: 900;
@@ -219,18 +223,18 @@ a {
   text-transform: uppercase;
   color: #ffffff;
 }
-.hero-text {
-  max-width: 700px;
+.hero-container {
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
 }
 .hero {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
-  padding-right: 452px;
-  padding-left: 452px;
 }
 
-/* ===============BUTTON=============== */
 .button {
   /* bg */
   background: var(--accent-color);
@@ -245,21 +249,31 @@ a {
   line-height: 1.87;
   color: var(--background-color);
 }
+.button {
+  padding: 10px 32px;
+}
 
-/* .button:hover,
+.button:hover,
 .button:focus {
-  color: #1885de;
-} */
-.advantages {
+  background-color: #188ce8;
+}
+
+/* ====================END HERO==================== */
+
+/* ====================OUR ADVANTAGES==================== */
+
+.advantages-list {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
-.section-advantages {
+.advantages {
   padding-top: 94px;
 }
-.advantages:not(:last-child) {
+.advantages-item:not(:last-child):not(:last-child) {
   margin-right: 30px;
 }
+
 .details {
   font-family: Roboto;
   font-weight: bold;
@@ -346,12 +360,21 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   width: 270px;
+
   /* ===================WHAT WE DO=================== */
 }
+
 .our-job {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.our-job {
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.what-we-do-img {
+  margin-top: 30px;
+  margin-left: 30px;
 }
 .what-we-do {
   font-family: Roboto;
@@ -370,18 +393,36 @@ a {
   background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
   mix-blend-mode: normal;
 }
+
 .img-2 {
   /* img */
 
   background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg);
 }
+
 .img-3 {
   /* img */
 
   background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
 }
 
-#our-team {
+/* =================== END WHAT WE DO=================== */
+
+/* ===================OUR TEAM=================== */
+
+.our-team {
+  display: flex;
+  flex-wrap: wrap;
+}
+.heading-team {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.team-members {
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.our-team {
   /* Section bg our team */
 
   background: #f5f4fa;
@@ -429,6 +470,13 @@ a {
 
   color: var(--title-text-color);
 }
+.igor-designer {
+  /* card bg */
+  background: #ffffff;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
 .product-designer {
   /* Product Designer */
 
@@ -450,6 +498,13 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+.olga-frontend {
+  /* card bg */
+  background: #ffffff;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .img-tarasov {
@@ -523,6 +578,12 @@ a {
 
   color: var(--primary-text-color);
 }
+.tarasov-marketing {
+  background: #ffffff;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
 .michael-e {
   font-family: Roboto;
 
@@ -549,6 +610,13 @@ a {
 
   color: var(--primary-text-color);
 }
+.michael-ui {
+  background: #ffffff;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+
 footer {
   background: #2f303a;
 }
@@ -713,16 +781,25 @@ footer {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
+.works-link {
+  display: block;
+}
 .our-marketing {
   margin-right: 8px;
 }
 .our-works {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
+.our-job {
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.works-img {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
 .poster {
   /* container bg */
 
@@ -751,6 +828,14 @@ footer {
 
   color: var(--primary-text-color);
 }
+.techno-web {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  padding-top: 20px;
+  margin-bottom: 4px;
+  padding-bottom: 20px;
+}
 .poster {
   /* Постер New Orlean vs Golden Star */
   font-family: Roboto;
@@ -774,7 +859,14 @@ footer {
 
   color: var(--primary-text-color);
 }
-
+.design-poster {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  padding-top: 20px;
+  margin-bottom: 4px;
+  padding-bottom: 20px;
+}
 .restaurant {
   /* Ресторан Seafood */
 
