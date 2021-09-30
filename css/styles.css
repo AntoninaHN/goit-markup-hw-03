@@ -17,11 +17,14 @@
   padding-right: 94px;
   padding-bottom: 94px;
 }
-.section-advantages {
-  padding-top: 47px;
+.advantages-padding {
+  padding-top: 94px;
   padding-bottom: 47px;
 }
-
+.what-we-do-padding {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
 *,
 *::after,
 *::before {
@@ -205,9 +208,8 @@ a {
 .telephone-number:focus {
   color: var(--accent-color);
 }
-
-.hero {
-  background-color: #2f303a;
+/* ===============HERO=============== */
+.hero-text {
   font-family: Roboto;
   font-weight: 900;
   font-size: 44px;
@@ -217,31 +219,49 @@ a {
   text-transform: uppercase;
   color: #ffffff;
 }
+.hero-text {
+  max-width: 700px;
+}
+.hero {
+  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-right: 452px;
+  padding-left: 452px;
+}
+
+/* ===============BUTTON=============== */
 .button {
   /* bg */
-
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
   text-decoration: none;
   /* Заказать услугу */
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-
   color: var(--background-color);
 }
-/* .button:hover,.button:focus {
-  color: #2196F3;
+
+/* .button:hover,
+.button:focus {
+  color: #1885de;
+} */
+.advantages {
+  display: flex;
+  align-items: center;
 }
- */
+.section-advantages {
+  padding-top: 94px;
+}
+.advantages:not(:last-child) {
+  margin-right: 30px;
+}
 .details {
   font-family: Roboto;
-
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
@@ -260,7 +280,9 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+  width: 270px;
 }
+
 .punctuality {
   font-family: Roboto;
 
@@ -282,6 +304,7 @@ a {
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+  width: 270px;
 }
 
 .planning {
@@ -297,18 +320,16 @@ a {
 }
 .planning-text {
   font-family: Roboto;
-
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
   /* or 171% */
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
+  width: 270px;
 }
+
 .technologies {
   font-family: Roboto;
-
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
@@ -320,13 +341,17 @@ a {
 
 .technologies-text {
   font-family: Roboto;
-
   font-size: 14px;
   line-height: 1.7;
-
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
+  width: 270px;
+  /* ===================WHAT WE DO=================== */
+}
+.our-job {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .what-we-do {
   font-family: Roboto;
@@ -371,6 +396,11 @@ a {
   letter-spacing: 0.03em;
 
   color: #212121;
+}
+.team-members {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
 }
 .our-team {
   /* Section bg */
@@ -574,6 +604,11 @@ footer {
 }
 
 /* ===========PORTFOLIO=========== */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .all-button {
   /* Все */
 
@@ -594,6 +629,9 @@ footer {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
+.all-projects {
+  margin-right: 8px;
+}
 .web-site {
   font-family: Roboto;
   font-style: normal;
@@ -606,6 +644,9 @@ footer {
 
   color: var(--title-text-color);
   background-color: #f5f4fa;
+}
+.web-pages {
+  margin-right: 8px;
 }
 .web-site:hover,
 .web-site:focus {
@@ -624,6 +665,9 @@ footer {
 
   color: var(--title-text-color);
   background-color: #f5f4fa;
+}
+.app {
+  margin-right: 8px;
 }
 .app-button:hover,
 .app-button:focus {
@@ -648,6 +692,9 @@ footer {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
+.our-design {
+  margin-right: 8px;
+}
 .marketing-button {
   font-family: Roboto;
   font-style: normal;
@@ -665,6 +712,16 @@ footer {
 .marketing-button:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
+}
+.our-marketing {
+  margin-right: 8px;
+}
+.our-works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .poster {
   /* container bg */
