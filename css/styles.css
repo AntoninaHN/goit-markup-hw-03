@@ -5,7 +5,6 @@
   --primary-text-color: #757575;
   --button-color: #f5f4fa;
 }
-
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -17,15 +16,15 @@
   padding-bottom: 94px;
   padding-top: 94px;
 }
-
 .what-we-do {
   padding-bottom: 50px;
 }
-
+.advantages {
+  padding-bottom: 50px;
+}
 html {
   box-sizing: border-box;
 }
-
 *,
 *::after,
 *::before {
@@ -41,7 +40,6 @@ p {
 img {
   display: block;
 }
-
 body {
   color: var(--background-color);
 }
@@ -56,7 +54,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 .header {
   /* top line bg */
   color: var(--background-color);
@@ -83,14 +80,12 @@ a {
   margin-right: 93px;
   padding-bottom: 25px;
 }
-
 .logo span {
   color: var(--accent-color);
   text-decoration: none;
   line-height: 1.1;
   font-weight: 700;
 }
-
 .site-nav {
   display: flex;
   align-items: center;
@@ -100,7 +95,6 @@ a {
   margin-right: 50px;
   padding-bottom: 32px;
 }
-
 .nav-link {
   font-family: Roboto;
   font-weight: 500;
@@ -114,21 +108,18 @@ a {
 .nav-link:focus {
   color: var(--accent-color);
 }
-
 .current {
   color: var(--accent-color);
 }
-
-.contact-us {
+.contacts-list {
   display: flex;
   align-items: center;
-
   margin-left: auto;
 }
-.email {
+.contacts-list {
   /* info@devstudio.com */
+  /* +38 096 111 11 11 */
   font-family: Roboto;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -140,19 +131,6 @@ a {
   margin-right: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.telephone-number {
-  /* +38 096 111 11 11 */
-
-  font-family: Roboto;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--primary-text-color);
 }
 .contact-number {
   margin: auto;
@@ -186,17 +164,14 @@ a {
   text-transform: uppercase;
   color: #ffffff;
 }
-
 .hero {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .button {
   /* bg */
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   text-decoration: none;
   font-family: Roboto;
@@ -210,12 +185,10 @@ a {
   padding: 10px 32px;
   border-radius: 4px;
 }
-
 .button:hover,
 .button:focus {
   background-color: #188ce8;
 }
-
 /* ====================END HERO==================== */
 
 /* ====================OUR ADVANTAGES==================== */
@@ -225,102 +198,31 @@ a {
   align-items: center;
   flex-direction: row;
 }
-
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
-
-.details {
+.advantages-title {
   font-family: Roboto;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: #212121;
+  margin-bottom: 10px;
 }
-.details-text {
+.advantages-text {
   font-family: Roboto;
-
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
-  /* or 171% */
-  letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
-  width: 270px;
-}
-
-.punctuality {
-  font-family: Roboto;
-
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-.punctuality-text {
-  font-family: Roboto;
-
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
-  /* or 171% */
-  letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
-  width: 270px;
-}
-
-.planning {
-  font-family: Roboto;
-
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-.planning-text {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 1.7;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   width: 270px;
 }
+/* ===================END OF ADVANTAGES=================== */
 
-.technologies {
-  font-family: Roboto;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-
-.technologies-text {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-  width: 270px;
-  /* ===================END OF ADVANTAGES=================== */
-
-  /* ===================WHAT WE DO=================== */
-}
-
+/* ===================WHAT WE DO=================== */
 .our-job {
   display: flex;
   flex-wrap: wrap;
@@ -336,20 +238,16 @@ a {
 }
 .what-we-do {
   font-family: Roboto;
-
   font-weight: bold;
   font-size: 30px;
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--title-text-color);
 }
-
 /* =================== END WHAT WE DO=================== */
 
 /* ===================OUR TEAM=================== */
-
 .our-team {
   display: flex;
   flex-wrap: wrap;
@@ -361,16 +259,13 @@ a {
 
   padding-bottom: 30px;
 }
-
 .heading-team {
   padding-bottom: 50px;
 }
-
 .our-team {
   /* Section bg our team */
   background: #f5f4fa;
 }
-
 .team-names {
   padding-top: 30px;
   margin-bottom: 10px;
@@ -412,11 +307,9 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
 .team-links {
   background-color: #ffffff;
 }
-
 footer {
   background: #2f303a;
 }
@@ -424,38 +317,28 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .logo-footer {
   /* WebStudio */
-
   font-family: Raleway;
-
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   text-decoration: none;
-
   color: var(--background-color);
 }
 .logo-footer span {
   /* WebStudio */
-
   color: var(--accent-color);
   text-decoration: none;
 }
 .address {
   /* г. Киев, пр-т Леси Украинки, 26 */
-
   font-family: Roboto;
-
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
-  /* or 171% */
   letter-spacing: 0.03em;
-
   color: var(--background-color);
   text-decoration: none;
   font-style: normal;
@@ -463,7 +346,6 @@ footer {
 .email-foot-number {
   /* info@example.com */
   /* +38 099 111 11 11 */
-
   font-family: Roboto;
 
   font-weight: normal;
@@ -474,6 +356,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+/* =====================END OF STUDIO===================== */
 
 /* ===========PORTFOLIO=========== */
 .buttons {
@@ -511,13 +394,11 @@ footer {
   background-color: #f5f4fa;
   border-radius: 4px;
 }
-
 .modal-button:hover,
 .modal-button:focus {
   color: var(--background-color);
   background-color: var(--accent-color);
 }
-
 .our-works {
   display: flex;
   flex-wrap: wrap;
@@ -539,7 +420,6 @@ footer {
 
   color: var(--title-text-color);
 }
-
 .item-title {
   font-family: Roboto;
   font-weight: bold;
@@ -557,7 +437,6 @@ footer {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
 .works-item {
   background-color: #ffffff;
 }
@@ -574,3 +453,4 @@ footer {
 .item-description {
   margin-bottom: 20px;
 }
+/* =====================END OF PORTFOLIO===================== */
