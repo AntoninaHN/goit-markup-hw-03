@@ -15,14 +15,13 @@
 }
 .section {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 .advantages-padding {
-  padding-top: 94px;
   padding-bottom: 47px;
 }
 .what-we-do-padding {
   padding-top: 47px;
-  padding-bottom: 94px;
 }
 *,
 *::after,
@@ -34,6 +33,7 @@ h2,
 h3,
 p {
   margin-top: 0;
+  margin-bottom: 0;
 }
 img {
   display: block;
@@ -270,7 +270,7 @@ a {
 .advantages {
   padding-top: 94px;
 }
-.advantages-item:not(:last-child):not(:last-child) {
+.advantages-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -391,7 +391,6 @@ a {
   /* img */
 
   background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-  mix-blend-mode: normal;
 }
 
 .img-2 {
@@ -464,6 +463,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 10px;
   /* identical to box height */
 
   letter-spacing: 0.03em;
@@ -474,7 +474,6 @@ a {
   /* card bg */
   background: #ffffff;
   padding-top: 30px;
-  margin-bottom: 10px;
   padding-bottom: 30px;
 }
 .product-designer {
@@ -503,7 +502,7 @@ a {
   /* card bg */
   background: #ffffff;
   padding-top: 30px;
-  margin-bottom: 10px;
+
   padding-bottom: 30px;
 }
 
@@ -533,7 +532,7 @@ a {
   font-size: 16px;
   line-height: 1.18;
   /* identical to box height */
-
+  margin-bottom: 10px;
   letter-spacing: 0.03em;
 
   color: var(--title-text-color);
@@ -561,7 +560,7 @@ a {
   /* identical to box height */
 
   letter-spacing: 0.03em;
-
+  margin-bottom: 10px;
   color: var(--title-text-color);
 }
 .marketing {
@@ -581,7 +580,7 @@ a {
 .tarasov-marketing {
   background: #ffffff;
   padding-top: 30px;
-  margin-bottom: 10px;
+
   padding-bottom: 30px;
 }
 .michael-e {
@@ -593,7 +592,7 @@ a {
   /* identical to box height */
 
   letter-spacing: 0.03em;
-
+  margin-bottom: 10px;
   color: var(--title-text-color);
 }
 .ui-designer {
@@ -613,7 +612,6 @@ a {
 .michael-ui {
   background: #ffffff;
   padding-top: 30px;
-  margin-bottom: 10px;
   padding-bottom: 30px;
 }
 
@@ -835,6 +833,7 @@ footer {
   padding-top: 20px;
   margin-bottom: 4px;
   padding-bottom: 20px;
+  padding-left: 24px;
 }
 .poster {
   /* Постер New Orlean vs Golden Star */
