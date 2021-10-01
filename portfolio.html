@@ -22,7 +22,7 @@
     <h1>Portfolio</h1>
     <!-- Header -->
 
-    <header class="header">
+       <header class="header">
       <div class="container header-container">
         <nav class="site-nav">
           <a href="./index.html" lang="en" class="logo">
@@ -30,14 +30,14 @@
           </a>
 
           <ul class="site-nav">
-            <li class="studio-current">
-              <a href="./index.html"> Студия </a>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link"> Студия </a>
             </li>
 
-            <li class="portfolio-current">
-              <a href="./portfolio.html">Портфолио</a>
+            <li class="portfolio-current nav-item">
+              <a href="./portfolio.html" class="nav-link current">Портфолио</a>
             </li>
-            <li class="contacts">
+            <li class="contacts nav-link">
               <a href="">Контакты</a>
             </li>
           </ul>
@@ -57,30 +57,32 @@
     <main>
       <section class="section">
         <div class="container">
+
           <!-- BUTTONS -->
           <h2>Примеры работ</h2>
           <ul class="buttons">
-            <li class="web-pages">
-              <button class="web-site">Веб-сайты</button>
-            </li>
             <li class="all-projects">
-              <button class="all-button">Все</button>
+              <button class="modal-button" type="button">Все</button>
             </li>
+            <li class="web-pages">
+              <button class="modal-button" type="button">Веб-сайты</button>
+            </li>
+            <li class="app"><button class="modal-button">Приложения</button></li>
             <li class="our-design">
-              <button class="design-button">Дизайн</button>
+              <button class="modal-button" type="button">Дизайн</button>
             </li>
             <li class="our-marketing">
-              <button class="marketing-button">Маркетинг</button>
+              <button class="modal-button" type="button">Маркетинг</button>
             </li>
-            <li class="app"><button class="app-button">Приложения</button></li>
           </ul>
         </div>
-      </section>
+      
       <!-- WORKS -->
-      <section class="section">
+      
         <div class="container">
           <ul class="our-works">
-            <li class=works-img">
+
+            <li class="works-item">
               <a href="" class="works-link">
                 <img
                   src="./images-portfolio/img.jpg"
@@ -88,13 +90,14 @@
                   width="370"
                   height="294"
                 />
-                <div class="techno-web">
-                  <h3 class="techno">Технокряк</h3>
-                  <p lang="en" class="web">Веб сайт</p>
+                <div class="our-works-list">
+                  <h3 class="item-title">Технокряк</h3>
+                  <p lang="en" class="item-description">Веб сайт</p>
                 </div>
               </a>
             </li>
-            <li class="works-img">
+
+            <li class="works-item">
               <a href="" class="works-link">
                 <img
                   src="./images-portfolio/img-2.jpg"
@@ -102,14 +105,14 @@
                   width="370"
                   height="294"
                 />
-                <div class="design-poster">
-                  <h3 class="poster">Постер New Orleans vs Golden Star</h3>
-                  <p class="poster-design">Дизайн</p>
+                <div class="our-works-list">
+                  <h3 class="item-title">Постер New Orleans vs Golden Star</h3>
+                  <p class="item-description">Дизайн</p>
                 </div>
               </a>
             </li>
 
-            <li class="works-img">
+            <li class="works-item">
               <a href="" class="works-link">
                 <img
                   src="./images-portfolio/img-3.jpg"
@@ -117,14 +120,14 @@
                   width="370"
                   height="294"
                 />
-                <div>
-                <h3 class="restaurant">Ресторан Seafood</h3>
-                <p class="app-restaurant">Приложение</p>
+                <div class="our-works-list">
+                <h3 class="item-title">Ресторан Seafood</h3>
+                <p class="item-description">Приложение</p>
                 </div>
               </a>
             </li>
 
-            <li class="works-img">
+            <li class="works-item">
               <a href="" class="works-link">
                 <img
                   src="./images-portfolio/img-4.jpg"
@@ -132,12 +135,14 @@
                   width="370"
                   height="294"
                 />
+                <div class="our-works-list">
+                <h3 class="item-title">Проект Prime</h3>
+                <p class="item-description">Маркетинг</p>
               </a>
-              <h3 class="prime">Проект Prime</h3>
-              <p class="prime-marketing">Маркетинг</p>
+              </div>
             </li>
 
-            <li class="works-img">
+            <li class="works-item">
               <a href="" class="works-link">
                 <img
                   src="./images-portfolio/img-5.jpg"
@@ -145,12 +150,14 @@
                   width="370"
                   height="294"
                 />
+                <div class="our-works-list">
+                <h3 class="item-title">Проект Boxes</h3>
+                <p class="item-description">Приложение</p>
               </a>
-              <h3 class="boxes">Проект Boxes</h3>
-              <p class="box-app">Приложение</p>
+              </div>
             </li>
 
-            <li class="works-img">
+            <li class="works-item">
               <a href="" class="works-link">
                 <img
                   src=".//images-portfolio/img-6.jpg"
@@ -158,12 +165,14 @@
                   width="370"
                   height="294"
                 />
+                <div class="our-works-list">
+                <h3 class="item-title">Inspiration has no boarders</h3>
+                <p class="item-description">Веб-сайт</p>
               </a>
-              <h3 class="no-borders">Inspiration has no boarders</h3>
-              <p class="web-no-boarders">Веб-сайт</p>
+              </div>
             </li>
 
-            <li class="works-img">
+            <li class="works-item">
               <a href="" class="works-link">
                 <img
                   src="./images-portfolio/img-7.jpg"
@@ -171,12 +180,14 @@
                   width="370"
                   height="294"
                 />
+                <div class="our-works-list">
+                <h3 class="item-title">Издание Limited Edition</h3>
+                <p class="item-description">Дизайн</p>
               </a>
-              <h3 class="limited">Издание Limited Edition</h3>
-              <p class="design-limited">Дизайн</p>
+              </div>
             </li>
 
-            <li class="works-img">
+            <li class="works-item">
               <a href="" class="works-link">
                 <img
                   src="./images-portfolio/img-8.jpg"
@@ -184,12 +195,14 @@
                   width="370"
                   height="294"
                 />
+                <div class="our-works-list">
+                <h3 class="item-title">Проект LAB</h3>
+                <p class="item-description">Маркетинг</p>
               </a>
-              <h3 class="lab">Проект LAB</h3>
-              <p class="lab-marketing">Маркетинг</p>
+              </div>
             </li>
 
-            <li class="works-img">
+            <li class="works-item">
               <a href="" class="works-link">
                 <img
                   src="./images-portfolio/img-9.jpg"
@@ -197,9 +210,11 @@
                   width="370"
                   height="294"
                 />
+                <div class="our-works-list">
+                <h3 class="item-title">Growing Business</h3>
+                <p class="item-description">Приложение</p>
               </a>
-              <h3 class="business">Growing Business</h3>
-              <p class="app-business">Приложение</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -209,7 +224,7 @@
     <!-- Footer -->
 
     <footer>
-      <div class="container">
+      <div class="container footer-container">
         <a href="./index.html" lang="en" class="logo-footer">
           <span> Web</span>Studio
         </a>
