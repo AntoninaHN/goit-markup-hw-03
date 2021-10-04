@@ -336,7 +336,10 @@ footer {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--background-color);
+  display: inline-block;
+  margin-bottom: 20px;
 }
+
 .logo-footer span {
   /* WebStudio */
   color: var(--accent-color);
@@ -344,8 +347,6 @@ footer {
 }
 .address {
   display: flex;
-  margin-bottom: 9px;
-  margin-top: 9px;
 }
 .address {
   /* г. Киев, пр-т Леси Украинки, 26 */
@@ -358,6 +359,10 @@ footer {
   text-decoration: none;
   font-style: normal;
 }
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .email-foot-number {
   /* info@example.com */
   /* +38 099 111 11 11 */
