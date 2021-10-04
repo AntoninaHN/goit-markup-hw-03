@@ -5,6 +5,17 @@
   --primary-text-color: #757575;
   --button-color: #f5f4fa;
 }
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .container {
   width: 1200px;
   padding-right: 15px;
@@ -161,6 +172,7 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 .hero {
   background-color: #2f303a;
@@ -464,13 +476,12 @@ footer {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  padding-left: 24px;
+  padding: 20px;
 }
 .item-title {
-  padding-top: 20px;
   margin-bottom: 4px;
 }
-.item-description {
+/* .item-description {
   margin-bottom: 20px;
-}
+} */
 /* =====================END OF PORTFOLIO===================== */
