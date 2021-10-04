@@ -16,12 +16,10 @@
   padding-bottom: 94px;
   padding-top: 94px;
 }
-.what-we-do {
-  padding-bottom: 50px;
-}
-.advantages {
-  padding-bottom: 50px;
-}
+
+/* .advantages {
+  margin-bottom: 47px;
+} */
 html {
   box-sizing: border-box;
 }
@@ -90,7 +88,7 @@ a {
   display: flex;
   align-items: center;
 }
-.nav-item {
+.nav-item:not(:last-child) {
   padding-top: 32px;
   margin-right: 50px;
   padding-bottom: 32px;
@@ -192,15 +190,24 @@ a {
 /* ====================END HERO==================== */
 
 /* ====================OUR ADVANTAGES==================== */
-
+.advantages {
+  padding-bottom: 47px;
+}
 .advantages-list {
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-top: -30px;
+  margin-left: -30px;
 }
-.advantages-item:not(:last-child) {
-  margin-right: 30px;
+.advantages-item {
+  margin-left: 30px;
+  margin-top: 30px;
 }
+.advantages-item {
+  flex-basis: calc((100% - 120px) / 4);
+}
+
 .advantages-title {
   font-family: Roboto;
   font-weight: bold;
@@ -223,6 +230,12 @@ a {
 /* ===================END OF ADVANTAGES=================== */
 
 /* ===================WHAT WE DO=================== */
+.what-we-do {
+  margin-bottom: 47px;
+}
+.what-we-do-title {
+  padding-top: 47px;
+}
 .our-job {
   display: flex;
   flex-wrap: wrap;
@@ -256,11 +269,9 @@ a {
 }
 .team-item {
   background: #ffffff;
-
-  padding-bottom: 30px;
 }
 .heading-team {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .our-team {
   /* Section bg our team */
@@ -268,17 +279,15 @@ a {
 }
 .team-names {
   padding-top: 30px;
-  margin-bottom: 10px;
+  padding-bottom: 30px;
 }
 .heading-team {
   font-family: Roboto;
-
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
 }
 .team-members {
@@ -298,6 +307,7 @@ a {
   margin-bottom: 10px;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 10px;
 }
 .item-job {
   font-family: Roboto;
@@ -333,6 +343,11 @@ footer {
   text-decoration: none;
 }
 .address {
+  display: flex;
+  margin-bottom: 9px;
+  margin-top: 9px;
+}
+.address {
   /* г. Киев, пр-т Леси Украинки, 26 */
   font-family: Roboto;
   font-weight: normal;
@@ -363,7 +378,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .all-button {
   /* Все */
